@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Adachi</title>
+        <title>Kazemi</title>
         <link rel="shortcut icon" href="images/smile.png">
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h2 {
+                color: green;
+            }
+            #block {
+                border: 3px dashed blue;
+                background-color: yellow;
+                width: 50%;
+                height: 300px;
+                margin: 20px;
+                padding: 10px;
+            }
+            .code {
+                font-family: courier, monospace;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+            th {
+                background-color: lightgray;
+            }
+            ol > li {
+                color: red;
+            }
+        </style>
     </head>
     <body>
+        <h1 style="text-align:center;">HI LARISSA!</h1>
         <p>Header Sizes</p>
         <h1>h1</h1>
         <h2>h2</h2>
@@ -25,25 +54,117 @@
             <li>2</li>
             <li>3</li>
         </ol>
+        <p>Nested Lists:</p>
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <ul>
+                <li>B.1</li>
+                <li>B.2</li>
+            </ul>
+            <li>C</li>
+        </ol>
         <p>Image:</p>
         <img src="images/smile.png" width=25%>
         <p>Table:</p>
         <table>
             <tr>
-                <th>Name</th>
-                <th>College</th>
-                <th>Year</th>
+                <th colspan="3">CSS Selectors</th>
+            </tr>
+            <tr style="font-weight:bold;">
+                <td>Selector</td>
+                <td>Description</td>
+                <td>Examples</td>
             </tr>
             <tr>
-                <td>Kazemi Adachi</td>
-                <td>JE</td>
-                <td>2020</td>
+                <td>.a</td>
+                <td>Class selector</td>
+                <td></td>
             </tr>
             <tr>
-                <td>Handsome Dan</td>
-                <td>Yale</td>
-                <td>18</td>
+                <td>#a</td>
+                <td>ID selector</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a, b</td>
+                <td>Multiple element selector</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a b</td>
+                <td>Descendant selector</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a > b</td>
+                <td>Child selector</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a + b</td>
+                <td>Adjacent sibling selector</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>[a=b]</td>
+                <td>Attribute selector</td>
+                <td>[type="text"]</td>
+            </tr>
+            <tr>
+                <td>a:b</td>
+                <td>Pseudoclass selector</td>
+                <td>button:hover</td>
+            </tr>
+            <tr>
+                <td>a::b</td>
+                <td>Pseudoelement selector</td>
+                <td>a::before, a::after, p::selection</td>
             </tr>
         </table>
+        <p>Form:</p>
+        <form>
+            <input type="Text" placeholder="Undefined" name="name">
+            <button>Tada!</button>
+        </form>
+        <p>Id & Class:</div>
+        <div id="block">
+            This is some block text. It is defined by the <span class="code">block</span> id in style.
+        </div>
+        <p class="screen-only">
+            This paragraph will not appear when printed.
+        </p>
+    <div class="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div>
+        <div>P</div>
+    </div>
+    <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+    </div>
     </body>
 </html>
