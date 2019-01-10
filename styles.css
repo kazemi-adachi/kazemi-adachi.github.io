@@ -1,5 +1,12 @@
-body {
-    background-color: powderblue;
+@media (min-width: 500px) {
+    body {
+        background-color: powderblue;
+    }
+}
+@media (max-width: 499px) {
+    body {
+        background-color: fuchsia;
+    }
 }
 h1 {
     color: blue;
