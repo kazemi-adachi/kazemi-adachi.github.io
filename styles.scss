@@ -1,0 +1,51 @@
+$pad: 10px;
+
+@media (min-width: 500px) {
+    body {
+        background-color: powderblue;
+    }
+}
+@media (max-width: 499px) {
+    body {
+        background-color: fuchsia;
+    }
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+}
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+@media print {
+    .screen-only {
+        display: none;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container > div {
+    background-color: springgreen;
+    margin: 20px;
+    padding: pad;
+    width: 200px;
+}
+.grid {
+    background-color: green;
+    display: grid;
+    padding: pad;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+.grid-item {
+    background-color: white;
+    text-align: center;
+}
