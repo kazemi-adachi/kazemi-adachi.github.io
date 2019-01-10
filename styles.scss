@@ -37,13 +37,13 @@ table {
 .container > div {
     background-color: springgreen;
     margin: 20px;
-    padding: pad;
+    padding: $pad;
     width: 200px;
 }
 .grid {
     background-color: green;
     display: grid;
-    padding: pad;
+    padding: $pad;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-columns: auto auto auto;
